@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght=400;500;700;900&display=swap');
+
+* {
+  font-family: 'Tajawal', sans-serif !important;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #070512;
+}
+
+/* حركة نبض متوهجة خفيفة للمسار المسهل */
+@keyframes accessibility-glow {
+  0%,
+  100% {
+    border-color: #d97706;
+    box-shadow: 0 0 10px rgba(217, 119, 6, 0.2);
+  }
+  50% {
+    border-color: #fbbf24;
+    box-shadow: 0 0 25px rgba(251, 191, 36, 0.5);
+  }
+}
+
+.accessibility-pulse {
+  animation: accessibility-glow 2s infinite ease-in-out;
+}
+
+/* إخفاء شريط التمرير */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
